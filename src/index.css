@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark text-white font-sans;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M7 2v2H5c-1.1 0-2 .9-2 2v14c0 1.1 .9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1 -.9-2-2-2h-2V2h-2v2H9V2H7zm12 18H5V9h14v11z'/%3E%3C/svg%3E")
+    no-repeat center;
+  background-size: 1em;
+  cursor: pointer;
+  opacity: 1;
+}
+input[type="date"] {
+  color-scheme: dark;
+}
